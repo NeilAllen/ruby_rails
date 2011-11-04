@@ -28,3 +28,5 @@ I modified the /etc/skel/.profile to include:
 I also added the same two lines to all the existing user's ~/.profile 
 
 Now any user can install ruby versions and gems into that central location. 
+
+Note: I just redid this on a VM to retrace my steps and it seems that even though I'm referencing the /usr/local/rbenv in .profile everything is still getting installed in ~/.rbenv so this may not work with the latest version of rbenv. It will still keep rbenv itself centralized so an admin can update it as needed
