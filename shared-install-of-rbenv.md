@@ -11,7 +11,11 @@ Here's the steps: (as sudo)
 1. $ cd /usr/local
 2. $ git clone git://github.com/sstephenson/rbenv.git rbenv
 3. $ chgrp staff rbenv
-4. $ chmod -R g+rwx rbenv
+4. $ chmod -R g+rwxX rbenv
+5. $ cd rbenv
+6. $ mkdir shims versions
+
+Make sure that all the users you want to be able to modify rbenv are members of the staff group. 
 
 I also setup ruby-build
 
@@ -22,11 +26,10 @@ I also setup ruby-build
  
 I modified the /etc/skel/.profile to include:
 
+- `export RBENV_ROOT="/usr/local/rbenv"`
 - `export PATH="/usr/local/rbenv/bin:$PATH"`
 - `eval "$(rbenv init -)"`
 
 I also added the same two lines to all the existing user's ~/.profile 
 
 Now any user can install ruby versions and gems into that central location. 
-
-Note: I just redid this on a VM to retrace my steps and it seems that even though I'm referencing the /usr/local/rbenv in .profile everything is still getting installed in ~/.rbenv so this may not work with the latest version of rbenv. It will still keep rbenv itself centralized so an admin can update it as needed
