@@ -12,3 +12,17 @@ This happens because ~/.bash_profile is read only at login. You would need to co
       [ -f ~/.bash_profile ] && source ~/.bash_profile
     fi
 
+## cronjobs and whenever
+
+Gems are not available in cron unless you source .bashrc or .zshrc to load the environment paths.
+
+If using [whenever](https://github.com/javan/whenever), one solution is to create a custom job_type:
+
+    job_type :rbenv_gem, "/bin/zsh -c 'source ~/.zshrc && bundle exec :task'"
+    every 1.day, :at => '5:00 am' do
+      rbenv_gem 'backup perform --trigger appbackup --config_file /www/app/config/backup.rb"'
+    end
+
+The above will generate:
+
+    /bin/zsh -c 'source ~/.zshrc && bundle exec backup perform --trigger appbackup --config_file "/www/app/config/backup.rb"'
