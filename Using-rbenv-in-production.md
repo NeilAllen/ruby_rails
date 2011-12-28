@@ -40,3 +40,7 @@ Now all your applications will use this Ruby version unless they have a `.rbenv-
 ### Deploying
 
 If you are using `bundler` there's nothing you need to change on your deployment strategy as long as you run always your commands with `bundle exec`.
+
+## Guides
+
+- [Using Rbenv To Manage Rubies](http://shapeshed.com/using-rbenv-to-manage-rubies/)
