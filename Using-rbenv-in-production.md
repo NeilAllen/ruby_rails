@@ -1,6 +1,6 @@
 ## Method 1: Installing everything into a deploy user
 
-Note: Before installing anything make sure your server has `git` installed.
+**Note:** Before installing anything make sure your server has `git` installed.
 
 Run `rbenv-installer`:
 
