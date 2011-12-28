@@ -11,7 +11,7 @@ Once it has been downloaded run add to your load path `rbenv`:
 ```
 if [[ -d $HOME/.rbenv ]]; then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init - --no-rehash)"
+  eval "$(rbenv init -)"
 fi
 ```
 
