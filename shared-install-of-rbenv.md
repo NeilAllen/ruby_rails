@@ -10,7 +10,7 @@ Here's the steps: (as sudo)
 
 1. $ cd /usr/local
 2. $ git clone git://github.com/sstephenson/rbenv.git rbenv
-3. $ chgrp staff rbenv
+3. $ chgrp -R staff rbenv
 4. $ chmod -R g+rwxX rbenv
 5. $ cd rbenv
 6. $ mkdir shims versions
