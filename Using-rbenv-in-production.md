@@ -1,4 +1,7 @@
-## Method 1: Installing everything into a deploy user
+* [Method 1](#method1) Installing everything into a deploy user.
+* [Method 2](#method2) Bootstrap Ruby+Chef into user root and use Chef cookbooks thereafter.
+
+## <a name="method1"></a>Method 1: Installing everything into a deploy user
 
 **Note:** Before installing anything make sure your server has `git` installed.
 
@@ -37,6 +40,17 @@ And make them global:
 
 Now all your applications will use this Ruby version unless they have a `.rbenv-version` file on the root of the project.
 
+## <a name="method2"></a>Method 2: Chef managed system-wide and user installs of rbenv+rubies
+
+To avoid hand-rolled ruby installations and distro-packaged ruby installations, but rather
+manage rbenv user and system-wide installs using Chef-Solo and fnichol's [ruby_build] and [rbenv]
+cookbooks, bootstrap an initial ruby (1.9.2-p290) + chef + bundler install:
+
+    curl -L https://raw.github.com/hedgehog/rbenv-installer/sysinstall/bin/rbenv-bootstrap-chef-solo | sudo -i bash
+
+After this your production installations of ruby can be managed by Chef/Chef-Solo and cookbooks.
+Example: install a different Ruby system-wide and then remove this bootstrapped version :)
+
 ### Deploying
 
 If you are using `bundler` there's nothing you need to change on your deployment strategy as long as you run always your commands with `bundle exec`.
@@ -44,3 +58,6 @@ If you are using `bundler` there's nothing you need to change on your deployment
 ## Guides
 
 - [Using Rbenv To Manage Rubies](http://shapeshed.com/using-rbenv-to-manage-rubies/)
+
+[ruby_build]: https://github.com/fnichol/chef-ruby_build
+[rbenv]: https://github.com/fnichol/chef-rbenv
