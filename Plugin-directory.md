@@ -1,4 +1,6 @@
 * [bundler](https://github.com/carsomyr/rbenv-bundler) - makes rbenv's shims aware of bundle installation paths
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command in each installed ruby
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for specified rubies
+* [use](https://github.com/rkh/rbenv-use) - rvm style use command
 * [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and per-project environment variables
+* [whatis](https://github.com/rkh/rbenv-whatis) - resolving abbreviations to full ruby identifiers (useful for other plugins) 
