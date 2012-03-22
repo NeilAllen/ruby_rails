@@ -83,7 +83,7 @@ It also should hypothetically be possible to have a setup where people used shar
 
 Just make sure your desired ruby is the current rbenv ruby (run `rbenv which` or `rbenv version` to see, as usual) when installing the passenger gem and running the passenger webserver install commands. That will then be the ruby passenger runs. 
 
-It is not neccesary to set up the rbenv ENV variables in the `apache` account. It shouldn't be neccesary to set them up in the user account passenger will run apps under either, although it doesn't hurt and can make debugging and troubleshooting less confusing to do so. 
+It is not neccesary to set up the rbenv ENV variables in the `apache` account. It shouldn't be neccesary to set them up in the user account passenger will run apps under either (for bundler-based apps), although it doesn't hurt and can make debugging and troubleshooting less confusing to do so. 
 
 ## capistrano
 
