@@ -1,5 +1,6 @@
 * [Method 1](#method1) Installing everything into a deploy user.
 * [Method 2](#method2) Bootstrap Ruby+Chef into user root and use Chef cookbooks thereafter.
+* Method 3 Use a [[Shared Install of rbenv]] (link to seperate wiki page)
 
 ## <a name="method1"></a>Method 1: Installing everything into a deploy user
 
