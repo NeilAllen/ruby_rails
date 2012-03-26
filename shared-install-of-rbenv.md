@@ -4,7 +4,7 @@ A shared system-wide install of rbenv is possible, although it's still a somewha
 
 The point of a shared install is to allow multiple unix accounts to use rbenv without each having to install different ruby versions (and usually gems) seperately. 
 
-The RBENV_HOME environmental variable is mainly what makes this setup possible. Use a recent version of rbenv to make sure it includes the RBENV_HOME feature, and any fixes to how that feature works. 
+The RBENV_ROOT environmental variable is mainly what makes this setup possible. Use a recent version of rbenv to make sure it includes the RBENV_ROOT feature, and any fixes to how that feature works. 
 
 ## Install rbenv to /usr/local/rbenv
 
@@ -20,21 +20,21 @@ Or another location of your choice, but this one is what many have done. Instead
 
 ## user environment for shared rbenv install
 
-The additional RBENV_HOME env variable needs to be added to the usual rbenv shell ENV setup for users who are to use it. 
+The additional RBENV_ROOT env variable needs to be added to the usual rbenv shell ENV setup for users who are to use it. 
 
 In each user's `~/.profile`, `~/.bash_profile`, or `~/.zshenv` (depending on shell environment) (and/or optionally in the `/etc/skel/.profile`  or `/etc/skel/.bash_profile` etc, the template files for subsequently created accounts):
 
-    export RBENV_HOME=/usr/local/rbenv
+    export RBENV_ROOT=/usr/local/rbenv
     # these next are as usual for rbenv
-    export PATH="$RBENV_HOME/bin:$PATH
+    export PATH="$RBENV_ROOT/bin:$PATH
     eval "$(rbenv init -)"
 
-Alternately, you can use the no-shell-magic version, which might be better for accounts on production machines that won't be used for interactive shells. Again, this is just like any other rbenv except for the RBENV_HOME. 
+Alternately, you can use the no-shell-magic version, which might be better for accounts on production machines that won't be used for interactive shells. Again, this is just like any other rbenv except for the RBENV_ROOT. 
 
-    export RBENV_HOME=/usr/local/rbenv
-    export PATH="$RBENV_HOME/shims:$RBENV_HOME/bin:$PATH"
+    export RBENV_ROOT=/usr/local/rbenv
+    export PATH="$RBENV_ROOT/shims:$RBENV_ROOT/bin:$PATH"
 
-Individual accounts on the machine can still 'opt out' and install and use account-specific rbenv installs simply by omitting the RBENV_HOME for that account. 
+Individual accounts on the machine can still 'opt out' and install and use account-specific rbenv installs simply by omitting the RBENV_ROOT for that account. 
 
 ## Optionally, install ruby-build as an rbenv plugin to this location
 
