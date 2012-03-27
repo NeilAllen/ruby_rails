@@ -26,7 +26,7 @@ In each user's `~/.profile`, `~/.bash_profile`, or `~/.zshenv` (depending on she
 
     export RBENV_ROOT=/usr/local/rbenv
     # these next are as usual for rbenv
-    export PATH="$RBENV_ROOT/bin:$PATH
+    export PATH="$RBENV_ROOT/bin:$PATH"
     eval "$(rbenv init -)"
 
 Alternately, you can use the no-shell-magic version, which might be better for accounts on production machines that won't be used for interactive shells. Again, this is just like any other rbenv except for the RBENV_ROOT. 
