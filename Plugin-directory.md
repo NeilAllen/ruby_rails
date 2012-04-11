@@ -2,6 +2,7 @@
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command in each installed ruby
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for current ruby version
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for specified rubies
+* [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided Rubies and Gems from within a sudo session
 * [update](https://github.com/rkh/rbenv-update) - update rbenv and installed plugins
 * [use](https://github.com/rkh/rbenv-use) - rvm style use command
 * [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and per-project environment variables
