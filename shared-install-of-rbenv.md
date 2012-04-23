@@ -75,9 +75,7 @@ Note however that on a server used only for production/deployment with modern bu
 
 You could try to set up permissions such that only root can install new rubies and gems, but everyone can use them. (*Instructions from someone who has verified this?*)
 
-It also should hypothetically be possible to have a setup where people used shared rbenv install for rubies, but still each account installs gems to their own account-specific location, by using the standard ruby (?) GEM_HOME and GEM_PATH env variables in each user's environment. I haven't tried this, not sure the details. 
-
-
+Some have tried a shared install, letting each user account setup separate gem directories using the GEM_HOME and GEM path env variables.  BUT a problem arises: different rubies will store their gems in the same GEM_HOME directory - making this approach untenable.  An alternative approach is to use the [rbenv-usergems](https://github.com/andyl/rbenv-usergems) plugin.
 
 ## passenger
 
