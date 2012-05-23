@@ -67,7 +67,7 @@ The trick here is that we need everything in the `/usr/local/rbenv` to be *reada
 
 This is easy enough to set up on first install, with `chown` and `chgrp`. In the above instructions, the `chgrp -R staff` is meant with the idea that you have a `staff` group composed of everyone who should be able to use rbenv and install rubies and gems. 
 
-However, it can be difficult to maintain when people install rubies or gems. If a certain user account installs a new ruby or even just a gem, it will usually end up with file ownership belonging to that user. You can wind up with a mishmash of ownership in that directory, which is messy. And files can end up not readable or writeable by everyone they should be, after ruby and gem installs.  In the instructions above, we tried setting the 'setgid' in our chmod to ameliorate this, but experience shows that alone isn't really reliable. 
+However, it can be difficult to maintain when people install rubies or gems. If a certain user account installs a new ruby or even just a gem, it will usually end up with file ownership belonging to that user. You can wind up with a mishmash of ownership in that directory, which is messy. And files can end up not readable or writeable by everyone they should be, after ruby and gem installs.  In the instructions above, we tried setting the "setgid bit" in our chmod to ameliorate this, but experience shows that alone isn't really reliable. 
 
 New rubies are installed relatively infrequently, so can maybe cleaned up manually after install. But gems are the real issue. 
 
