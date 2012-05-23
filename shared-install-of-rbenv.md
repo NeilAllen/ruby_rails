@@ -18,6 +18,8 @@ Or another location of your choice, but this one is what many have done. Instead
 3. $ chgrp -R staff rbenv
 4. $ chmod -R g+rwxXs rbenv
 
+*Is setting the setgid bit here really a good idea? It seems safe but it cripples your Ruby pretty badly. For instance, I'm getting errors like "Insecure operation - exist?" when I try to do basically anything.* --@mcmire
+
 ## user environment for shared rbenv install
 
 The additional RBENV_ROOT env variable needs to be added to the usual rbenv shell ENV setup for users who are to use it. 
