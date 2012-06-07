@@ -27,7 +27,7 @@ The `rbenv-installer` will install `rbenv` and the following plugins:
 
 ### Install Rubies
 
-Make sure you have the required packages installed. If you are in `Ubuntu 10.04 LTS` or `Ubuntu 11.10` you can use the bootstrap scripts provided by `rbenv-installer`:
+Make sure you have the required packages installed. If you are in `Ubuntu 10.04 LTS`, `Ubuntu 11.10` and `Ubuntu 12.04 LTS` you can use the bootstrap scripts provided by `rbenv-installer`:
 
     rbenv bootstrap-ubuntu-10-04
 
