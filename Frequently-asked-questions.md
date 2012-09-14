@@ -26,3 +26,7 @@ If using [whenever](https://github.com/javan/whenever), one solution is to creat
 The above will generate:
 
     /bin/zsh -c 'source ~/.zshrc && bundle exec backup perform --trigger appbackup --config_file "/www/app/config/backup.rb"'
+
+## How to install Ruby with rbenv on Ubuntu 12.04
+
+See: http://www.stehem.net/2012/05/08/how-to-install-ruby-with-rbenv-on-ubuntu-12-04.html
