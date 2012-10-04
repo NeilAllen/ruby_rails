@@ -13,10 +13,13 @@ Or another location of your choice, but this one is what many have done. Instead
 
 (probably as sudo)
 
-1. $ cd /usr/local
-2. $ git clone git://github.com/sstephenson/rbenv.git rbenv
-3. $ chgrp -R staff rbenv
-4. $ chmod -R g+rwxXs rbenv
+
+```shell
+$ cd /usr/local
+$ git clone git://github.com/sstephenson/rbenv.git rbenv
+$ chgrp -R staff rbenv
+$ chmod -R g+rwxXs rbenv
+```
 
 *Is setting the setgid bit here really a good idea? It seems safe but it cripples your Ruby pretty badly. For instance, I'm getting errors like "Insecure operation - exist?" when I try to do basically anything. Also, not EVERYTHING needs to be group-executable, just group-writable.* --@mcmire
 
@@ -44,11 +47,13 @@ There are other ways to build ruby manually, but many find ruby-build convenient
 
 (probably as sudo)
 
-1. mkdir /usr/local/rbenv/plugins
-2. cd /usr/local/rbenv/plugins
-3. git clone git://github.com/sstephenson/ruby-build.git
-4. $ chgrp -R staff ruby-build
-5. $ chmod -R g+rwxs ruby-build
+```shell
+$ mkdir /usr/local/rbenv/plugins
+$ cd /usr/local/rbenv/plugins
+$ git clone git://github.com/sstephenson/ruby-build.git
+$ chgrp -R staff ruby-build
+$ chmod -R g+rwxs ruby-build
+```
 
 ## Use rbenv as normal
 
