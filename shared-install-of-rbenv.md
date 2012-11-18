@@ -66,7 +66,7 @@ Just like any rbenv install. One difference is that when you set the rbenv 'defa
 
 There's no way from the command line to set a default for just the current user. However, you can still use project-specific .rbenv directors, the RBENV_VERSION shell variable, or the `rbenv shell` command as ordinarily. A user could manually add an `export RBENV_VERSION=1.9.3-p125` to their .profile or other shell startup file to have their preferred ruby set for interactive shells on login. 
 
-## <a name="permission-issues">&nbsp</a>Note on permissions issues
+## Note on permissions issues
 
 This is the main not entirely solved pain point of this kind of shared rbenv install. 
 
