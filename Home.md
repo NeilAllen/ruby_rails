@@ -34,7 +34,13 @@ If you already have a `.profile` file, it might be best to not create
 
 For zsh, you may experience better results with `.zshrc` instead of `.zshenv`.
 
+### Rubinius 2.0 in Ruby 1.9 mode
+
+Rubinius in 1.9 mode uses a separate bin directory for executable binstubs. To
+compensate for that, use the [rbx 2.0 dev fix plugin][rbx].
+
 
   [install]: https://github.com/sstephenson/rbenv#installation
   [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
   [ruby-build]: https://github.com/sstephenson/ruby-build#readme
+  [rbx]: https://github.com/collinschaafsma/rbenv-rbx_2.0.0-dev_fix#readme
