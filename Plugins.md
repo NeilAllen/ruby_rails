@@ -16,6 +16,19 @@ This list is edited by rbenv maintainers.
 * [whatis](https://github.com/rkh/rbenv-whatis) - resolving abbreviations to
   full Ruby identifiers (useful for other plugins)
 
+## Bundler integration
+
+There is a [rbenv-bundler](https://github.com/carsomyr/rbenv-bundler) which
+adjusts rbenv shims and `rbenv which` command with respect to the current
+project's bundle. However, **its usage is not recommended** because of slow
+performance and overengineered state.
+
+If you want to free yourself from having to always write `bundle exec <command>`
+in a project, first generate Bundler's binstubs:
+
+    bundle install --binstubs
+
+Then add `./bin` to your PATH.
 
 ## Other plugins
 
@@ -30,5 +43,3 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
-* [bundler](https://github.com/carsomyr/rbenv-bundler) - makes rbenv's shims
-  aware of bundle installation paths
