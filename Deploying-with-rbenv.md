@@ -26,6 +26,7 @@ The recommended way of using Bundler in production is like so:
 
 The `--binstubs` option generates executables in your application's `./bin`
 directory for gems in the bundle.
+[[Read more about binstubs|Understanding binstubs]].
 
 Now tools that interact with the app should strictly use the executables in
 `./bin`. For instance, to invoke Unicorn:

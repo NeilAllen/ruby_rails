@@ -1,3 +1,5 @@
 * [[FAQ|Home]]
 * [[rbenv plugins|Plugins]]
 * [[Deploying with rbenv]]
+* [[Understanding binstubs]]
+* [[Unix shell initialization]]
