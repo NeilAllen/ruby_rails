@@ -110,7 +110,7 @@ launch RSpec the same way in a context of a project and outside of it.
 
 ### Manually created binstubs
 
-Now that you know that binstubs are simple scripts written in any lanuage and
+Now that you know that binstubs are simple scripts written in any language and
 understand their purpose, you should consider creating own binstubs for your
 project or your local development environment.
 
