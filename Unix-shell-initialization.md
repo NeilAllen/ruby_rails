@@ -27,8 +27,8 @@ Here are some common operations and shell modes they result in:
 
 * log in to a remote system via SSH:
   **login + interactive**
-* execute a command/script over SSH, e.g. `ssh user@host 'echo $PWD'`:
-  **non-login, interactive**
+* execute a script remotely, e.g. `ssh user@host 'echo $PWD'`:
+  **non-login,&nbsp;interactive**
 * start a new shell process, e.g. `bash`:
   **non-login, interactive**
 * run a script, `bash myscript.sh`:
@@ -87,7 +87,7 @@ In order of activation:
 
 * OS X:
   * [`~/.MacOSX/environment.plist`][plist] - affects **all** graphical programs
-  * `~/.launchd.conf`, `/etc/launchd.conf`
+  * `/etc/launchd.conf`
   * `/etc/paths`, `/etc/paths.d/*`
 * Linux:
   * `/etc/environment`
@@ -108,6 +108,7 @@ See also:
 
 * [Environment Variables](https://help.ubuntu.com/community/EnvironmentVariables)
 * path_helper(8)
+* launchd.conf(5)
 * pam_env(8)
 
 
