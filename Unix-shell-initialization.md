@@ -82,7 +82,7 @@ In order of activation:
   * **zsh**: `.zshenv` + `.zprofile` + `.zshrc`
 * Executing a command remotely with `ssh`:
   * **bash**: `.bashrc`
-  * **zsh**: `.zshenv` + `.zshrc`
+  * **zsh**: `.zshenv`
 
 ## Misc. things that affect `$PATH`
 
