@@ -10,7 +10,7 @@ as:
 
 ## Shell modes
 
-Which initializtion files get sourced by the shell is dependent on the
+Which initialization files get sourced by the shell is dependent on the
 combination of modes in which a particular shell process runs. There are two
 main, non-exclusive modes:
 
