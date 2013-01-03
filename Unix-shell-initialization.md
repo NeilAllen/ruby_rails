@@ -103,9 +103,10 @@ In order of activation:
 ## Misc. things that affect `$PATH`
 
 * OS X:
+  * `/etc/paths`, `/etc/paths.d/*`
   * [`~/.MacOSX/environment.plist`][plist] - affects **all** graphical programs
   * `/etc/launchd.conf`
-  * `/etc/paths`, `/etc/paths.d/*`
+  * TextMate: Preferences -> Advanced -> Shell Variables
 * Linux:
   * `/etc/environment`
 
