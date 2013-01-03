@@ -53,6 +53,8 @@ In order of activation:
 2. interactive **non-login**:
    1. `/etc/bash.bashrc` (some Linux; not on Mac OS X)
    2. `~/.bashrc`
+3. **non-interactive**:
+   1. source file in `$BASH_ENV`
 
 ### zsh
 
@@ -67,6 +69,20 @@ In order of activation:
 5. **login** mode:
    1. `/etc/zlogin`
    2. `~/.zlogin`
+
+### [dash][]
+
+1. **login** mode:
+   1. `/etc/profile`
+   2. `~/.profile`
+2. **interactive**:
+   1. source file in `$ENV`
+
+### [fish][]
+
+1. `<install-prefix>/config.fish`
+2. `/etc/fish/config.fish`
+3. `~/.config/fish/config.fish`
 
 ### Practical guide to which files get sourced when
 
@@ -113,5 +129,6 @@ See also:
 * pam_env(8)
 
 
-  [plist]:
-  http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPRuntimeConfig/Articles/EnvironmentVars.html#//apple_ref/doc/uid/20002093-113982
+  [dash]: http://gondor.apana.org.au/~herbert/dash/
+  [fish]: http://ridiculousfish.com/shell/user_doc/html/index.html#initialization
+  [plist]: http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPRuntimeConfig/Articles/EnvironmentVars.html#//apple_ref/doc/uid/20002093-113982
