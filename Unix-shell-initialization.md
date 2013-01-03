@@ -101,7 +101,7 @@ This guide was tested with:
 
 On these operating systems/apps:
 
-* Mac OS X Lion: Terminal.app, iTerm2
+* Mac OS X 10.8 (Mountain Lion): Terminal.app, iTerm2
 * Ubuntu 12.10: Terminal
 
 See also:
