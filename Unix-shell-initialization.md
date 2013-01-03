@@ -10,8 +10,9 @@ as:
 
 ## Shell modes
 
-Which init files get sourced by the shell is dependent on the mode in which a
-particular shell process runs:
+Which initializtion files get sourced by the shell is dependent on the
+combination of modes in which a particular shell process runs. There are two
+main, non-exclusive modes:
 
 * **login** - e.g. when user logs in to a system with non-graphical interface or
   via SSH;
