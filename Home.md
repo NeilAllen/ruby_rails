@@ -12,7 +12,9 @@ To install rbenv, please refer to the [Readme][install].
 
 2.  Check that rbenv's shims directory is in PATH:
 
-        echo $PATH | grep --color=auto "$(rbenv root)/shims"
+    ```sh
+    echo $PATH | grep --color=auto "$(rbenv root)/shims"
+    ```
 
     If not, see the [`rbenv init` step][init] in installation instructions.
 
@@ -26,8 +28,10 @@ Typically it's one of the following:
 
 If your `.bash_profile` isn't taking effect, create this `.bashrc` file:
 
-    # invoked for non-login, interactive shells
-    [ -n "$PS1" ] && source ~/.bash_profile
+```sh
+# invoked for non-login, interactive shells
+[ -n "$PS1" ] && source ~/.bash_profile
+```
 
 If you already have a `.profile` file, it might be best to not create
 `.bash_profile` or `.bashrc`, but put rbenv configuration in `.profile`.

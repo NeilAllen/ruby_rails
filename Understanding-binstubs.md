@@ -29,7 +29,7 @@ require the source files of the project they belong to.
 The generated binstub `<ruby-prefix>/bin/rspec` is a short Ruby script,
 presented in a slightly simplified form here:
 
-~~~rb
+```rb
 #!/usr/bin/env ruby
 require 'rubygems'
 
@@ -39,7 +39,7 @@ gem 'rspec-core'
 
 # Loads the original executable
 load Gem.bin_path('rspec-core', 'rspec')
-~~~
+```
 
 The purpose of every RubyGems binstub is to use RubyGems to prepare the
 `$LOAD_PATH` before calling the original executable.
@@ -59,11 +59,11 @@ When you call `rspec` on the command-line, it results in this call chain:
 
 An rbenv shim, presented here in a slightly simplified form, is a short shell script:
 
-~~~sh
+```sh
 #!/usr/bin/env bash
 export RBENV_ROOT="$HOME/.rbenv"
 exec rbenv exec "$(basename "$0")" "$@"
-~~~
+```
 
 The purpose of rbenv's shims is to route every call to a ruby executable through
 `rbenv exec`, which ensures it gets executed with the right Ruby version.
@@ -87,20 +87,20 @@ environment. However, `bundle exec` is a pain to always write.
 Bundler can install binstubs in your project for all executables contained in
 the current bundle.
 
-~~~
+```
 bundle install --binstubs
-~~~
+```
 
 This creates, for example, `./bin/rspec` (simplified version):
 
-~~~rb
+```rb
 #!/usr/bin/env ruby
 require 'rubygems'
 # Prepares the $LOAD_PATH by adding to it lib directories of all gems in the
 # project's bundle:
 require 'bundler/setup'
 load Gem.bin_path('rspec-core', 'rspec')
-~~~
+```
 
 RSpec can now be easily called with `bin/rspec`.
 
@@ -117,11 +117,11 @@ project or your local development environment.
 For instance, in the context of a Rails application, a manually generated
 binstub to run Unicorn could be in `./bin/unicorn`:
 
-~~~rb
+```rb
 #!/usr/bin/env ruby
 require_relative '../config/boot'
 load Gem.bin_path('unicorn', 'unicorn')
-~~~
+```
 
 Using `bin/unicorn` now ensures that Unicorn will run in the exact same
 environment as the application: same Ruby version, same Gemfile dependencies.
