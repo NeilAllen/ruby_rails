@@ -29,16 +29,16 @@ Here are some common operations and shell modes they result in:
 * log in to a remote system via SSH:
   **login + interactive**
 * execute a script remotely, e.g. `ssh user@host 'echo $PWD'` or with
-  [Capistrano][]: **non-login,&nbsp;non-interactive**
+  [Capistrano][]: **non‑login,&nbsp;non‑interactive**
 * start a new shell process, e.g. `bash`:
-  **non-login, interactive**
+  **non‑login, interactive**
 * run a script, `bash myscript.sh`:
-  **non-login, non-interactive**
+  **non‑login, non‑interactive**
 * run an executable with `#!/usr/bin/env bash` shebang:
-  **non-login, non-interactive**
+  **non‑login, non‑interactive**
 * open a new graphical terminal window/tab:
   * on Mac OS X: **login, interactive**
-  * on Linux: **non-login, interactive**
+  * on Linux: **non‑login, interactive**
 
 
 ## Shell init files
