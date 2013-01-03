@@ -28,8 +28,8 @@ Here are some common operations and shell modes they result in:
 
 * log in to a remote system via SSH:
   **login + interactive**
-* execute a script remotely, e.g. `ssh user@host 'echo $PWD'`:
-  **non-login,&nbsp;interactive**
+* execute a script remotely, e.g. `ssh user@host 'echo $PWD'` or with
+  [Capistrano][]: **non-login,&nbsp;non-interactive**
 * start a new shell process, e.g. `bash`:
   **non-login, interactive**
 * run a script, `bash myscript.sh`:
@@ -96,7 +96,7 @@ In order of activation:
 * Logging into a system via SSH:
   * **bash**: `.bash_profile` or `.profile` (1st found)
   * **zsh**: `.zshenv` + `.zprofile` + `.zshrc`
-* Executing a command remotely with `ssh`:
+* Executing a command remotely with `ssh` or Capistrano:
   * **bash**: `.bashrc`
   * **zsh**: `.zshenv`
 
@@ -130,6 +130,7 @@ See also:
 * pam_env(8)
 
 
+  [Capistrano]: https://github.com/capistrano/capistrano/wiki
   [dash]: http://gondor.apana.org.au/~herbert/dash/
   [fish]: http://ridiculousfish.com/shell/user_doc/html/index.html#initialization
   [plist]: http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPRuntimeConfig/Articles/EnvironmentVars.html#//apple_ref/doc/uid/20002093-113982
