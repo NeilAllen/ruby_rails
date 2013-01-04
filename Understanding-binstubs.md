@@ -1,4 +1,4 @@
-Binstubs are wrapper scripts around executables (sometimes refered to as
+Binstubs are wrapper scripts around executables (sometimes referred to as
 "binaries", although they don't have to be compiled) whose purpose is to prepare
 the environment before dispatching the call to the original executable.
 
@@ -80,7 +80,7 @@ behavior.
 
 This is why `bundle exec <command>` is so often needed. It ensures the right
 versions of dependencies get activated, ensuring a consistent ruby runtime
-environment. However, `bundle exec` is a pain to always write.
+environment. However, `bundle exec` is a pain to always have to write.
 
 ### Bundler-generated binstubs
 

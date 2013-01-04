@@ -21,7 +21,7 @@ This list is edited by rbenv maintainers.
 There is a [rbenv-bundler](https://github.com/carsomyr/rbenv-bundler) which
 adjusts rbenv shims and `rbenv which` command with respect to the current
 project's bundle. However, **its usage is not recommended** because of slow
-performance and overengineered state.
+performance and over-engineered state.
 
 If you want to free yourself from having to always write `bundle exec <command>`
 in a project, first generate Bundler's binstubs:

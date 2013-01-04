@@ -56,7 +56,7 @@ In order of activation:
 3. **non-interactive**:
    1. source file in `$BASH_ENV`
 
-### zsh
+### Zsh
 
 1. `/etc/zshenv`
 2. `~/.zshenv`
@@ -90,15 +90,15 @@ In order of activation:
   * **bash**
      * OS X: `.bash_profile` or `.profile` (1st found)
      * Linux: `.profile` (Ubuntu, once per desktop login session) + `.bashrc`
-  * **zsh**
+  * **Zsh**
      * OS X: `.zshenv` + `.zprofile` + `.zshrc`
      * Linux: `.profile` (Ubuntu, once per desktop login session) + `.zshenv` + `.zshrc`
 * Logging into a system via SSH:
   * **bash**: `.bash_profile` or `.profile` (1st found)
-  * **zsh**: `.zshenv` + `.zprofile` + `.zshrc`
+  * **Zsh**: `.zshenv` + `.zprofile` + `.zshrc`
 * Executing a command remotely with `ssh` or Capistrano:
   * **bash**: `.bashrc`
-  * **zsh**: `.zshenv`
+  * **Zsh**: `.zshenv`
 
 ## Misc. things that affect `$PATH`
 
@@ -115,7 +115,7 @@ In order of activation:
 This guide was tested with:
 
 * bash 4.2.37, 4.2.39
-* zsh  4.3.11, 5.0
+* Zsh  4.3.11, 5.0
 
 On these operating systems/apps:
 

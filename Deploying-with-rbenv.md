@@ -13,7 +13,7 @@ Users of Chef or Puppet may find these projects useful:
 
 ## Ensure consistent PATH for processes
 
-Interactive, noninteractive shells, cron jobs, and similar processes for the
+Interactive, non-interactive shells, cron jobs, and similar processes for the
 "app" user all must ensure that rbenv is present in the PATH:
 
     export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"

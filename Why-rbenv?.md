@@ -5,7 +5,7 @@
 * Allow you to **override the Ruby version** with an environment
   variable.
 
-### In contrast with rvm, rbenv _does not…_
+### In contrast with RVM, rbenv _does not…_
 
 * **Need to be loaded into your shell.** Instead, rbenv's shim approach works by adding a directory to your `$PATH`.
 * **Override shell commands like `cd` or require prompt hacks.** That's dangerous and error-prone.
