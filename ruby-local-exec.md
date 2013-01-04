@@ -14,7 +14,7 @@ The functionality provided by `ruby-local-exec` has been rolled into the standar
 
 Now, when you run scripts or binstubs in an application with a `.ruby-version` file, rbenv will automatically use the application's specified Ruby version, regardless of what directory they're run from.
 
-To upgrade, first ensure your team and its servers are on rbenv 0.4.0 or later. Then adjust your shebangs back to:
+To upgrade, first ensure your team and its servers are on rbenv 0.4.0 or later. Adjust your shebangs back to:
 
     #!/usr/bin/env ruby
 
