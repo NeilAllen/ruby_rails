@@ -4,6 +4,10 @@ To install rbenv, please refer to the [Readme][install].
 
 ## Troubleshooting / FAQ
 
+### How is this better than RVM?
+
+See [[Why rbenv?]]
+
 ### How to verify that I have set up rbenv correctly?
 
 1.  Check that `rbenv` is in your PATH:
@@ -37,6 +41,9 @@ If you already have a `.profile` file, it might be best to not create
 `.bash_profile` or `.bashrc`, but put rbenv configuration in `.profile`.
 
 For zsh, you may experience better results with `.zshrc` instead of `.zshenv`.
+
+See [[Unix shell initialization]] for more info about how config files get
+loaded.
 
 ### Rubinius 2.0 in Ruby 1.9 mode
 
