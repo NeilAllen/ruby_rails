@@ -18,6 +18,8 @@ To upgrade, first ensure your team and its servers are on rbenv 0.4.0 or later. 
 
     #!/usr/bin/env ruby
 
+Then be sure to regenerate your shims with `rbenv rehash`.
+
 ## Can I silence the warning message?
 
 Set `RBENV_SILENCE_WARNINGS=1` in your environment to silence the `ruby-local-exec` deprecation warning message.
