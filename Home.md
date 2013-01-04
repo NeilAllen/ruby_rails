@@ -27,20 +27,13 @@ See [[Why rbenv?]]
 Typically it's one of the following:
 
 * bash: `~/.bash_profile`
-* zsh: `~/.zshenv`
+* zsh: `~/.zshrc`
 * other: `~/.profile`
 
-If your `.bash_profile` isn't taking effect, create this `.bashrc` file:
-
-```sh
-# invoked for non-login, interactive shells
-[ -n "$PS1" ] && source ~/.bash_profile
-```
-
-If you already have a `.profile` file, it might be best to not create
-`.bash_profile` or `.bashrc`, but put rbenv configuration in `.profile`.
-
-For zsh, you may experience better results with `.zshrc` instead of `.zshenv`.
+With bash on Ubuntu, you probably already have a `~/.profile`. In that case you
+should add rbenv config there instead of creating a `~/.bash_profile`. However,
+since this file is read only once per desktop login, you may achieve quicker
+results by adding rbenv to `~/.bashrc` instead.
 
 See [[Unix shell initialization]] for more info about how config files get
 loaded.
