@@ -28,7 +28,7 @@ in a project, first generate Bundler's binstubs:
 
     bundle install --binstubs
 
-Then add `./bin` to your PATH. See [[Understanding binstubs]] for more info.
+See [[Understanding binstubs]] for more info.
 
 ## Other plugins
 
