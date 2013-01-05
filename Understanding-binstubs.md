@@ -104,9 +104,12 @@ load Gem.bin_path('rspec-core', 'rspec')
 
 RSpec can now be easily called with `bin/rspec`.
 
-If you go one step further and prepend `./bin` to your $PATH, you can simply
-call `rspec` instead of `bin/rspec`. This is recommended so that you are able to
-launch RSpec the same way in a context of a project and outside of it.
+On your personal development machine, go one step further: prepend `./bin` to
+your `$PATH` and just call `rspec` instead of `bin/rspec`. That way your tools
+work the same way within a project and outside of it.
+
+Note: don't prepend a relative directory to your `$PATH` in production. It poses
+a minor, but potential, security risk.
 
 ### Manually created binstubs
 
