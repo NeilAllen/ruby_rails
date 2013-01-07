@@ -114,7 +114,7 @@ a minor, but potential, security risk.
 ### Manually created binstubs
 
 Now that you know that binstubs are simple scripts written in any language and
-understand their purpose, you should consider creating own binstubs for your
+understand their purpose, you should consider creating some binstubs for your
 project or your local development environment.
 
 For instance, in the context of a Rails application, a manually generated
