@@ -43,7 +43,8 @@ such behavior is unpredictable and therefore harmful.
 Typically it's one of the following:
 
 * bash: `~/.bash_profile`
-* Zsh: `~/.zshrc`
+* zsh: `~/.zshrc`
+* ksh: `~/.kshrc`
 * other: `~/.profile`
 
 With bash on Ubuntu, you probably already have a `~/.profile`. In that case you
