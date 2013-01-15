@@ -26,7 +26,9 @@ such behavior is unpredictable and therefore harmful.
 
 1.  Check that `rbenv` is in your PATH:
 
-        command which rbenv
+    ```sh
+    which rbenv
+    ```
 
 2.  Check that rbenv's shims directory is in PATH:
 
