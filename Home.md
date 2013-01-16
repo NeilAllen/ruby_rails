@@ -58,7 +58,7 @@ loaded.
 ### Rubinius 2.0 in Ruby 1.9 mode
 
 Rubinius in 1.9 mode uses a separate bin directory for executable binstubs. To
-compensate for that, use the [rbx 2.0 dev fix plugin][rbx].
+compensate for that, use the [rbx plugin][rbx].
 
 
   [install]: https://github.com/sstephenson/rbenv#installation
@@ -67,5 +67,5 @@ compensate for that, use the [rbx 2.0 dev fix plugin][rbx].
   [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
   [ruby-build]: https://github.com/sstephenson/ruby-build#readme
     "Command-line tool for downloading and compiling various Ruby releases"
-  [rbx]: https://github.com/collinschaafsma/rbenv-rbx_2.0.0-dev_fix#readme
-    "rbenv plugin to enable Rubinius 2.0 usage in 1.9 mode"
+  [rbx]: https://github.com/rmm5t/rbenv-rbx
+    "rbenv plugin to enable Rubinius 2.0 usage"
