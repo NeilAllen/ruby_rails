@@ -1,3 +1,5 @@
+See [[Authoring plugins]] for instructions on how to write new commands for rbenv or hook into its functionality.
+
 ## Approved plugins
 
 This list is edited by rbenv maintainers.
