@@ -1,12 +1,8 @@
 rbenv plugins provide new commands and/or hook into existing functionality of
-rbenv. The following file naming scheme should be followed:
+rbenv. The following file naming scheme should be followed in a plugin project:
 
-1. `bin/rbenv-*` for commands
+1. `bin/rbenv-COMMAND` for commands
 2. `etc/rbenv.d/HOOK_NAME/*.bash` for hooks
-
-A plugin can be dropped in as a sub-directory of `$RBENV_ROOT/plugins`, or it can
-be installed elsewhere on the system as long as `rbenv-*` executables are in the
-`$PATH` and hooks are installed accordingly somewhere in `$RBENV_HOOK_PATH`.
 
 
 ## rbenv commands
@@ -20,14 +16,14 @@ but bash script is recommended for portability.
 
 ### Environment
 
-Each rbenv command runs in the following environment:
+Each rbenv command runs with the following environment:
 
+* `$RBENV_ROOT` - where rbenv versions & user data is placed, typically `~/.rbenv`
+* `$RBENV_DIR` - the current directory of the caller
 * `$PATH` - constructed to contain:
   1. rbenv's `libexec` dir with core commands
   1. `$RBENV_ROOT/plugins/*/bin` for plugin commands
   1. `$PATH` (external value)
-* `$RBENV_ROOT` - typically `~/.rbenv`
-* `$RBENV_DIR` - the current directory of the caller
 
 ### Calling other commands
 
@@ -60,7 +56,7 @@ Here is a template for an executable called `rbenv-COMMAND`:
 set -e
 [ -n "$RBENV_DEBUG" ] && set -x
 
-# Optional: Abort with usage line when called with invalid args
+# Optional: Abort with usage line when called with invalid arguments
 # (replace COMMAND with the name of this command)
 if [ -z "$1" ]; then
   rbenv-help --usage COMMAND >&2

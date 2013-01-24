@@ -1,4 +1,10 @@
-See [[Authoring plugins]] for instructions on how to write new commands for rbenv or hook into its functionality.
+See [[Authoring plugins]] for instructions on how to write new commands for
+rbenv or hook into its functionality.
+
+A plugin can be installed by dropping it in as a sub-directory of
+`$RBENV_ROOT/plugins`, or it can be located elsewhere on the system as long as
+`rbenv-*` executables are placed in the `$PATH` and hooks are installed
+accordingly somewhere in `$RBENV_HOOK_PATH`.
 
 ## Approved plugins
 
