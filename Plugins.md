@@ -38,17 +38,19 @@ in a project, first generate Bundler's binstubs:
 
 See [[Understanding binstubs]] for more info.
 
-## Other plugins
+## Other plugins (alpha-order)
 
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
-* [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
-  specified rubies
+* [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
+* [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
+  specified rubies
+* [path](https://github.com/taqtiqa/rbenv-path) - manage contents of PATH (likely of interest to plugin writers)
+* [plugin](https://github.com/taqtiqa/rbenv-plugin) - manage rbenv plugins
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
-* [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
