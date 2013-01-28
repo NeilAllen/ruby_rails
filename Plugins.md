@@ -51,3 +51,4 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
+* [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
