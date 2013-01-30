@@ -23,3 +23,7 @@ Then be sure to regenerate your shims with `rbenv rehash`.
 ## Can I silence the warning message?
 
 Set `RBENV_SILENCE_WARNINGS=1` in your environment to silence the `ruby-local-exec` deprecation warning message.
+
+## Bundler
+
+If you used bundler with the option ```--shebang ruby-local-exec```, just remove it.
