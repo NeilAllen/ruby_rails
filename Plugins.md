@@ -10,11 +10,16 @@ accordingly somewhere in `$RBENV_HOOK_PATH`.
 
 This list is edited by rbenv maintainers.
 
+* [ruby-build](https://github.com/sstephenson/ruby-build) - compile and install Ruby
+* [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and
+  per-project environment variables
+* [gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash) - Automatically run
+  `rbenv rehash` every time you install a new gem
+* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - Automatically
+  install gems every time you install a new version of Ruby
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   with each installed Ruby
 * [gemset](https://github.com/jamis/rbenv-gemset) - basic gemset support
-* [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and
-  per-project environment variables
 * [rbx_2.0.0-dev_fix](https://github.com/collinschaafsma/rbenv-rbx_2.0.0-dev_fix)
   rbenv plugin that fixes up your shims and sets `RBENV_COMMAND_PATH`
   properly for rbx-2.0.0-dev in 1.9 mode 
