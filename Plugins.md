@@ -30,17 +30,20 @@ This list is edited by rbenv maintainers.
 
 ## Bundler integration
 
-There is a [rbenv-bundler](https://github.com/carsomyr/rbenv-bundler) which
-adjusts rbenv shims and `rbenv which` command with respect to the current
-project's bundle. However, **its usage is not recommended** because of slow
-performance and over-engineered state.
+There is [rbenv-bundler](https://github.com/carsomyr/rbenv-bundler) which
+adjusts rbenv's shims and `rbenv which` command with respect to the current
+project's bundle. However,
+[its usage is not recommended](https://github.com/carsomyr/rbenv-bundler/issues/32)
+because of poor performance and being bug-ridden.
 
 If you want to free yourself from having to always write `bundle exec <command>`
-in a project, first generate Bundler's binstubs:
+in a project, you can generate Bundler's binstubs:
 
     bundle install --binstubs
 
-See [[Understanding binstubs]] for more info.
+Now you can run `bin/rake` instead of `bundle exec rake`, and you can even drop
+the `bin/` prefix if you edit your `$PATH`. See [[Understanding binstubs]] for
+more info.
 
 ## Other plugins (alpha-order)
 
@@ -52,7 +55,8 @@ maintainers.
   current Ruby version
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
   specified rubies
-* [path](https://github.com/taqtiqa/rbenv-path) - manage contents of PATH (likely of interest to plugin writers)
+* [path](https://github.com/taqtiqa/rbenv-path) - manage contents of `$PATH`
+  (likely of interest to plugin writers)
 * [plugin](https://github.com/taqtiqa/rbenv-plugin) - manage rbenv plugins
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session

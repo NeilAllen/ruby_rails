@@ -72,26 +72,29 @@ The purpose of rbenv's shims is to route every call to a ruby executable through
 ## Project-specific binstubs
 
 When you run `rspec` within your project's directory, rbenv can ensure that it
-will get executed with the Ruby version configured for that project. However,
+gets executed with the selected *Ruby version* configured for that project. However,
 nothing will ensure that the right *version of RSpec* gets activated; in fact,
 RubyGems will simply activate the latest RSpec version even if your project
 depends on an older version. In the context of a project, this is unwanted
 behavior.
 
-This is why `bundle exec <command>` is so often needed. It ensures the right
+This is why `bundle exec <command>` is so essential. It ensures the right
 versions of dependencies get activated, ensuring a consistent ruby runtime
-environment. However, `bundle exec` is a pain to always have to write.
+environment. However, it's a pain to always have to write `bundle exec`.
 
 ### Bundler-generated binstubs
 
-Bundler can install binstubs in your project for all executables contained in
-the current bundle.
+Bundler can install binstubs for executables contained in your project's bundle:
 
-```
+```sh
+# generates binstubs for all gems in the bundle
 bundle install --binstubs
+
+# generate binstubs for a single gem (requires Bundler v1.3)
+bundle binstubs rspec
 ```
 
-This creates, for example, `./bin/rspec` (simplified version):
+This creates, for example, `./bin/rspec` (simplified version shown):
 
 ```rb
 #!/usr/bin/env ruby
@@ -102,14 +105,30 @@ require 'bundler/setup'
 load Gem.bin_path('rspec-core', 'rspec')
 ```
 
-RSpec can now be easily called with `bin/rspec`.
+RSpec can now be easily ran with just `bin/rspec`.
 
-On your personal development machine, go one step further: prepend `./bin` to
-your `$PATH` and just call `rspec` instead of `bin/rspec`. That way your tools
-work the same way within a project and outside of it.
+### Adding project-specific binstubs to PATH
 
-Note: don't prepend a relative directory to your `$PATH` in production. It poses
-a minor, but potential, security risk.
+Assuming the binstubs for a project are in the local `.bin/` directory, you can
+even go a step further to add the directory to shell `$PATH` so that `rspec` can
+be invoked without the `bin/` prefix:
+
+```
+export PATH="./bin:$PATH"
+```
+
+However, doing so on a system that other people have write access to (such as a
+shared host) [is a security risk](https://github.com/sstephenson/rbenv/issues/309).
+For extra security, you can make a script/shell function to add only the current
+project's `bin/` directory to `$PATH`:
+
+```
+export PATH="$PWD/bin:$PATH"
+hash -r 2>/dev/null || true
+```
+
+The downside of the more secure approach is that you have to execute it
+per-project instead of setting it once globally.
 
 ### Manually created binstubs
 
