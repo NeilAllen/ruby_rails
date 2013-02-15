@@ -50,6 +50,7 @@ more info.
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
+* [binstubs](https://github.com/ianheggie/rbenv-binstubs) - A Bundler binstubs Plugin for rbenv (simpler and faster than rbenv-bundler)
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
