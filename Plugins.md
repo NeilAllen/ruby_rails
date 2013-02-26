@@ -55,6 +55,7 @@ maintainers.
 * [communal-gems](https://github.com/tpope/rbenv-communal-gems) - Share gems across multiple Ruby installs
 * [ctags](https://github.com/tpope/rbenv-ctags) - Automatically generate ctags for rbenv Ruby stdlibs
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
+* [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
@@ -68,4 +69,3 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
-* [rbenv-install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
