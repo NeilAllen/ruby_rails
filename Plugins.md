@@ -50,7 +50,10 @@ more info.
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
+* [aliases](https://github.com/tpope/rbenv-aliases) - Create aliases for rbenv Ruby versions
 * [binstubs](https://github.com/ianheggie/rbenv-binstubs) - A Bundler binstubs Plugin for rbenv (simpler and faster than rbenv-bundler)
+* [communal-gems](https://github.com/tpope/rbenv-communal-gems) - Share gems across multiple Ruby installs
+* [ctags](https://github.com/tpope/rbenv-ctags) - Automatically generate ctags for rbenv Ruby stdlibs
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
@@ -59,6 +62,8 @@ maintainers.
 * [path](https://github.com/taqtiqa/rbenv-path) - manage contents of `$PATH`
   (likely of interest to plugin writers)
 * [plugin](https://github.com/taqtiqa/rbenv-plugin) - manage rbenv plugins
+* [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
+* [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
