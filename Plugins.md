@@ -68,3 +68,4 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
+* [rbenv-install-remote](https://github.com/fgrehm/rbenv-install-remote)
