@@ -109,7 +109,7 @@ RSpec can now be easily ran with just `bin/rspec`.
 
 ### Adding project-specific binstubs to PATH
 
-Assuming the binstubs for a project are in the local `.bin/` directory, you can
+Assuming the binstubs for a project are in the local `bin/` directory, you can
 even go a step further to add the directory to shell `$PATH` so that `rspec` can
 be invoked without the `bin/` prefix:
 
