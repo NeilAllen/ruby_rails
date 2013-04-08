@@ -99,6 +99,9 @@ In order of activation:
 * Executing a command remotely with `ssh` or Capistrano:
   * **bash**: `.bashrc`
   * **Zsh**: `.zshenv`
+* Remote git hook triggered by push over SSH:
+  * *no init files* get sourced, since hooks are running [within a restricted shell](http://git-scm.com/docs/git-shell)
+  * PATH will be roughly: `/usr/libexec/git-core:/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin`
 
 ## Misc. things that affect `$PATH`
 
