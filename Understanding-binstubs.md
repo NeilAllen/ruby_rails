@@ -87,12 +87,15 @@ environment. However, it's a pain to always have to write `bundle exec`.
 Bundler can install binstubs for executables contained in your project's bundle:
 
 ```sh
-# generates binstubs for all gems in the bundle
+# generates binstubs for ALL gems in the bundle
 bundle install --binstubs
 
-# generate binstubs for a single gem (requires Bundler v1.3)
-bundle binstubs rspec
+# ...OR, generate binstubs for a SINGLE gem (recommended)
+bundle binstubs rake
+bundle binstubs rspec-core
 ```
+
+<i>You are encouraged to check these binstubs in the project's version control so your colleagues might benefit from them.</i>
 
 This creates, for example, `./bin/rspec` (simplified version shown):
 
