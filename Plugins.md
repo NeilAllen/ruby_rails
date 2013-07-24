@@ -11,12 +11,14 @@ accordingly somewhere in `$RBENV_HOOK_PATH`.
 This list is edited by rbenv maintainers.
 
 * [ruby-build](https://github.com/sstephenson/ruby-build) - compile and install Ruby
+* [ctags](https://github.com/tpope/rbenv-ctags) - automatically generate ctags for rbenv Ruby stdlibs
 * [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and
   per-project environment variables
 * [gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash) - Automatically run
   `rbenv rehash` every time you install a new gem
-* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - Automatically
+* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - automatically
   install gems every time you install a new version of Ruby
+* [communal-gems](https://github.com/tpope/rbenv-communal-gems) - share gems across multiple Ruby installs
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   with each installed Ruby
 * [gemset](https://github.com/jamis/rbenv-gemset) - basic gemset support
@@ -27,6 +29,7 @@ This list is edited by rbenv maintainers.
 * [use](https://github.com/rkh/rbenv-use) - rvm-style use command
 * [whatis](https://github.com/rkh/rbenv-whatis) - resolving abbreviations to
   full Ruby identifiers (useful for other plugins)
+* [aliases](https://github.com/tpope/rbenv-aliases) - Create aliases for rbenv Ruby versions
 
 ## Bundler integration
 
@@ -41,19 +44,18 @@ in a project, you can generate Bundler's binstubs:
 
     bundle install --binstubs
 
-Now you can run `bin/rake` instead of `bundle exec rake`, and you can even drop
-the `bin/` prefix if you edit your `$PATH`. See [[Understanding binstubs]] for
-more info.
+Now you can run `bin/rake` instead of `bundle exec rake`.
+
+If you want to be able to just type `rake`, you have two options from here:
+
+1. You can add `./bin` to your `$PATH`. See [[Understanding binstubs]] for more info.
+2. You can install the [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs#readme) plugin and run `rbenv rehash` from your project.
 
 ## Other plugins (alpha-order)
 
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
-* [aliases](https://github.com/tpope/rbenv-aliases) - Create aliases for rbenv Ruby versions
-* [binstubs](https://github.com/ianheggie/rbenv-binstubs) - A Bundler binstubs Plugin for rbenv (simpler and faster than rbenv-bundler)
-* [communal-gems](https://github.com/tpope/rbenv-communal-gems) - Share gems across multiple Ruby installs
-* [ctags](https://github.com/tpope/rbenv-ctags) - Automatically generate ctags for rbenv Ruby stdlibs
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
