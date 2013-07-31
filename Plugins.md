@@ -21,7 +21,7 @@ This list is edited by rbenv maintainers.
 * [communal-gems](https://github.com/tpope/rbenv-communal-gems) - share gems across multiple Ruby installs
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   with each installed Ruby
-* [gemset](https://github.com/jamis/rbenv-gemset) - basic gemset support
+* [gemset](https://github.com/jfb/rbenv-gemset) - basic gemset support
 * [rbx](https://github.com/rmm5t/rbenv-rbx) - get gem executables working for
   Rubinius 2.0
 * [update](https://github.com/rkh/rbenv-update) - update rbenv and installed
