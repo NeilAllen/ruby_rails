@@ -68,6 +68,19 @@ loaded.
 Rubinius in 1.9 mode uses a separate bin directory for executable binstubs. To
 compensate for that, use the [rbx plugin][rbx].
 
+### `/dev/fd` error under Docker or FreeBSD
+
+    ERROR: rbenv/libexec/rbenv-version-file-read:
+    line 23: /dev/fd/62: No such file or directory
+
+Under Linux, the fix tends to be ensuring that udev is running. Or manually, doing the following: 
+
+    sudo ln -s /proc/self/fd /dev/fd
+
+Under Docker, add this to your `Dockerfile`:
+
+    RUN ln -s /proc/self/fd /dev/fd
+
 
   [install]: https://github.com/sstephenson/rbenv#installation
   [issues]: https://github.com/sstephenson/rbenv/issues
@@ -79,19 +92,3 @@ compensate for that, use the [rbx plugin][rbx].
     "Command-line tool for downloading and compiling various Ruby releases"
   [rbx]: https://github.com/rmm5t/rbenv-rbx
     "rbenv plugin to enable Rubinius 2.0 usage"
-
-### ERROR: rbenv/libexec/rbenv-version-file-read: line 23: /dev/fd/62: No such file or directory
-
-This error can appear for a variety of reasons. Under Linux, the fix tends to be ensuring that udev is running. Or manually, doing the following: 
-
-    sudo ln -s /proc/self/fd /dev/fd
-
-If you are experiencing this problem under Docker, try this in your Dockerfile:
-
-    # Fix /dev/fd
-    RUN ln -s /proc/self/fd /dev/fd
-
-Under FreeBSD, something like this, MIGHT fix the problem (untested):
-
-    sudo mount -f fdescfs fdescfs /dev/fd
-
