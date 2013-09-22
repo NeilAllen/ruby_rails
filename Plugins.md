@@ -56,6 +56,7 @@ If you want to be able to just type `rake`, you have two options from here:
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
+* [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
