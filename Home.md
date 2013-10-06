@@ -50,15 +50,10 @@ curl -s https://gist.github.com/mislav/4728286/raw/rbenv-doctor.sh | bash -x 2>&
 
 Typically it's one of the following:
 
-* bash: `~/.bash_profile`
+* bash: `~/.bash_profile` (or `~/.bashrc` on Ubuntu Desktop)
 * zsh: `~/.zshrc`
-* ksh: `~/.kshrc`
+* fish: `~/.config/fish/config.fish`
 * other: `~/.profile`
-
-With bash on Ubuntu, you probably already have a `~/.profile`. In that case you
-should add rbenv config there instead of creating a `~/.bash_profile`. However,
-since this file is read only once per desktop login, you may achieve quicker
-results by adding rbenv to `~/.bashrc` instead.
 
 See [[Unix shell initialization]] for more info about how config files get
 loaded.
