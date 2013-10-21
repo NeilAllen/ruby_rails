@@ -30,6 +30,7 @@ Here are some common operations and shell modes they result in:
   **login + interactive**
 * execute a script remotely, e.g. `ssh user@host 'echo $PWD'` or with
   [Capistrano][]: **non‑login,&nbsp;non‑interactive**
+* execute a script remotely and request a terminal, e.g. `ssh user@host -t 'echo $PWD'`: **non-login,&nbsp;interactive**
 * start a new shell process, e.g. `bash`:
   **non‑login, interactive**
 * run a script, `bash myscript.sh`:
