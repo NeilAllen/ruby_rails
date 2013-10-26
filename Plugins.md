@@ -22,8 +22,6 @@ This list is edited by rbenv maintainers.
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   with each installed Ruby
 * [gemset](https://github.com/jf/rbenv-gemset) - basic gemset support
-* [rbx](https://github.com/rmm5t/rbenv-rbx) - get gem executables working for
-  Rubinius 2.0
 * [update](https://github.com/rkh/rbenv-update) - update rbenv and installed
   plugins
 * [use](https://github.com/rkh/rbenv-use) - rvm-style use command
