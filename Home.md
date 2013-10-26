@@ -58,11 +58,6 @@ Typically it's one of the following:
 See [[Unix shell initialization]] for more info about how config files get
 loaded.
 
-### Rubinius 2.0 in Ruby 1.9 mode
-
-Rubinius in 1.9 mode uses a separate bin directory for executable binstubs. To
-compensate for that, use the [rbx plugin][rbx].
-
 ### `/dev/fd` error under Docker or FreeBSD
 
     ERROR: rbenv/libexec/rbenv-version-file-read:
