@@ -64,6 +64,7 @@ maintainers.
   specified rubies
 * [path](https://github.com/taqtiqa/rbenv-path) - manage contents of `$PATH`
   (likely of interest to plugin writers)
+* [plug](https://github.com/znz/rbenv-plug) - rbenv plugins installer
 * [plugin](https://github.com/taqtiqa/rbenv-plugin) - manage rbenv plugins
 * [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
