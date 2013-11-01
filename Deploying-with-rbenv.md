@@ -2,7 +2,7 @@ Setting up rbenv on a production server is exactly the same as in development.
 Some considerations for a hypothetical deployment strategy:
 
 * It is suggested that there is a single user for deployment, e.g. "app" user
-* `RBENV_ROOT` is at the default location: `~/app/.rbenv`
+* `RBENV_ROOT` is at the default location: `~app/.rbenv`
 * Ruby versions are either installed or symlinked to `~app/.rbenv/versions`
 * rbenv version 0.4 or greater is recommended.
 
