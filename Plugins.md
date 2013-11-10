@@ -66,10 +66,10 @@ maintainers.
   (likely of interest to plugin writers)
 * [plug](https://github.com/znz/rbenv-plug) - easiest rbenv plugin installer
 * [plugin](https://github.com/taqtiqa/rbenv-plugin) - manage rbenv plugins
+* [rails](https://github.com/alfa-jpn/rbenv-rails) - create rails project with the version.
 * [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
-* [rails](https://github.com/alfa-jpn/rbenv-rails) - create rails project with the version.
