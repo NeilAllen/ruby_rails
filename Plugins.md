@@ -57,6 +57,7 @@ maintainers.
 * [bundle-exec](https://github.com/maljub01/rbenv-bundle-exec) - Runs commands using `bundle exec` when invoked from a bundler-managed directory
 * [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
+* [git](https://github.com/znz/rbenv-git) - `rbenv git` command to run `git` in directories of rbenv and all installed plugins
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
