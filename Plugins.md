@@ -14,20 +14,24 @@ This list is edited by rbenv maintainers.
 * [ctags](https://github.com/tpope/rbenv-ctags) - automatically generate ctags for rbenv Ruby stdlibs
 * [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and
   per-project environment variables
-* [gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash) - Automatically run
-  `rbenv rehash` every time you install a new gem
-* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - automatically
-  install gems every time you install a new version of Ruby
-* [communal-gems](https://github.com/tpope/rbenv-communal-gems) - share gems across multiple Ruby installs
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   with each installed Ruby
-* [gemset](https://github.com/jf/rbenv-gemset) - basic gemset support
 * [update](https://github.com/rkh/rbenv-update) - update rbenv and installed
   plugins
-* [use](https://github.com/rkh/rbenv-use) - rvm-style use command
+* [use](https://github.com/rkh/rbenv-use) - RVM-style use command
 * [whatis](https://github.com/rkh/rbenv-whatis) - resolving abbreviations to
   full Ruby identifiers (useful for other plugins)
-* [aliases](https://github.com/tpope/rbenv-aliases) - Create aliases for rbenv Ruby versions
+* [aliases](https://github.com/tpope/rbenv-aliases) - create aliases for rbenv Ruby versions
+
+RubyGems-related plugins:
+
+* [gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash) - automatically run
+  `rbenv rehash` every time you install a new gem
+* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - automatically
+  install specific gems every time you install a new version of Ruby
+* [communal-gems](https://github.com/tpope/rbenv-communal-gems) - share gems across multiple Ruby installs
+* [user-gems](https://github.com/mislav/rbenv-user-gems) - discover gems installed under `~/.gem` or a custom `$GEM_HOME`
+* [gemset](https://github.com/jf/rbenv-gemset) - basic gemset support
 
 ## Bundler integration
 
