@@ -80,3 +80,4 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
+* [gem-update](https://github.com/nicknovitski/rbenv-gem-update) - automatically run `gem update --system` on `rbenv install`
