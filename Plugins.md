@@ -60,7 +60,9 @@ maintainers.
 
 * [bundle-exec](https://github.com/maljub01/rbenv-bundle-exec) - Runs commands using `bundle exec` when invoked from a bundler-managed directory
 * [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
+* [ccache](https://github.com/yyuu/rbenv-ccache) - Make Ruby build faster, with using the leverage of `ccache`.
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
+* [gem-update](https://github.com/nicknovitski/rbenv-gem-update) - automatically run `gem update --system` on `rbenv install`
 * [git](https://github.com/znz/rbenv-git) - `rbenv git` command to run `git` in directories of rbenv and all installed plugins
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
@@ -80,4 +82,3 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
-* [gem-update](https://github.com/nicknovitski/rbenv-gem-update) - automatically run `gem update --system` on `rbenv install`
