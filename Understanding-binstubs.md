@@ -135,6 +135,8 @@ hash -r 2>/dev/null || true
 The downside of the more secure approach is that you have to execute it
 per-project instead of setting it once globally.
 
+See also: [direnv](https://github.com/zimbatm/direnv).
+
 ### Manually created binstubs
 
 Now that you know that binstubs are simple scripts written in any language and
