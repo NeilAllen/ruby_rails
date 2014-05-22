@@ -82,3 +82,4 @@ maintainers.
   gems from within a sudo session
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
+* [gemdir](https://github.com/bachue/rbenv-gemdir) - Return the gem directory of the currently selected ruby
