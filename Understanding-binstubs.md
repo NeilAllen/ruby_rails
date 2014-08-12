@@ -108,7 +108,7 @@ require 'bundler/setup'
 load Gem.bin_path('rspec-core', 'rspec')
 ```
 
-RSpec can now be easily ran with just `bin/rspec`.
+RSpec can now be easily run with just `bin/rspec`.
 
 <i>Projects that are themselves gems should use a directory other than `bin/`, via a command like `bundle install --binstubs exec`. If you check in `bin/rspec` to your gem repo, installing your gem will break the `rspec` command.</i>
 
