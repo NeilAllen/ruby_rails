@@ -98,7 +98,7 @@ In order of activation:
   * **bash**: `.bash_profile` or `.profile` (1st found)
   * **Zsh**: `.zshenv` + `.zprofile` + `.zshrc`
 * Executing a command remotely with `ssh` or Capistrano:
-  * **bash**: `.bashrc`
+  * **bash**: source file in `$BASH_ENV`
   * **Zsh**: `.zshenv`
 * Remote git hook triggered by push over SSH:
   * *no init files* get sourced, since hooks are running [within a restricted shell](http://git-scm.com/docs/git-shell)
