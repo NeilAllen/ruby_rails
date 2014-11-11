@@ -58,6 +58,7 @@ If you want to be able to just type `rake`, you have two options from here:
 Please add new plugins here. They might get promoted to the above list by rbenv
 maintainers.
 
+* [around-install](https://github.com/toy/rbenv-around-install) - run scripts before and after `rbenv install` (externalised ruby-build hooks)
 * [bundle-exec](https://github.com/maljub01/rbenv-bundle-exec) - Runs commands using `bundle exec` when invoked from a bundler-managed directory
 * [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
 * [ccache](https://github.com/yyuu/rbenv-ccache) - Make Ruby build faster, with using the leverage of `ccache`.
@@ -66,6 +67,7 @@ maintainers.
 * [gemdir](https://github.com/bachue/rbenv-gemdir) - Return the gem directory of the currently selected ruby
 * [git](https://github.com/znz/rbenv-git) - `rbenv git` command to run `git` in directories of rbenv and all installed plugins
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
+* [jruby-mode](https://github.com/toy/rbenv-jruby-mode) - run jruby in different mode (1.8, 2.0) by adding suffix to version
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
@@ -81,5 +83,6 @@ maintainers.
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session
+* [update-rubies](https://github.com/toy/rbenv-update-rubies) - install updated ruby versions (`1.9.3-p547` => `1.9.3-p550`, `2.1.0` => `2.1.4`)
 * [usergems](https://github.com/andyl/rbenv-usergems) - store gems and shims in
   `~/.rbenv-usergems`
