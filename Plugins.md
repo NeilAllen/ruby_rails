@@ -79,6 +79,7 @@ maintainers.
 * [pluger](https://github.com/cao7113/rbenv-pluger) - rbenv plugin manager and booter
 * [rails](https://github.com/alfa-jpn/rbenv-rails) - create rails project with the version.
 * [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
+* [rbenv-clean](https://github.com/sableloki/rbenv-clean) - `gem clean` for rbenv
 * [rvm-download](https://github.com/garnieretienne/rvm-download) - Download ruby binaries from RVM repository
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
