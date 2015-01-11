@@ -54,6 +54,10 @@ $ rbenv versions
 * 2.2.0
 ```
 
+### Don't forget to build thoses RPMs by yourself
+
+https://gist.github.com/crhan/6800d9887aca1a5cf4b9
+
 
   [chef-ruby_build]: https://github.com/fnichol/chef-ruby_build#readme
   [chef-rbenv]: https://github.com/fnichol/chef-rbenv#readme
