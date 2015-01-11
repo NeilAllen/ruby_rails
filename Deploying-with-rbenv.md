@@ -39,6 +39,22 @@ Such invocation ensures that:
 2. The Unicorn version of the project's bundle is used.
 
 
+## Deploy rbenv in production with RPM
+
+```
+yum install rbenv-ruby21 rbenv-ruby22
+```
+
+That should set up rbenv with two Ruby versions installed:
+
+```
+$ rbenv versions
+  system
+  2.1.4
+* 2.2.0
+```
+
+
   [chef-ruby_build]: https://github.com/fnichol/chef-ruby_build#readme
   [chef-rbenv]: https://github.com/fnichol/chef-rbenv#readme
   [puppet-rbenv]: https://github.com/alup/puppet-rbenv#readme
