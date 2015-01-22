@@ -71,6 +71,9 @@ Under Docker, add this to your `Dockerfile`:
 
     RUN ln -s /proc/self/fd /dev/fd
 
+Under FreeBSD, doing the following:
+
+    sudo mount -t fdescfs fdescfs /dev/fd
 
   [install]: https://github.com/sstephenson/rbenv#installation
   [issues]: https://github.com/sstephenson/rbenv/issues
