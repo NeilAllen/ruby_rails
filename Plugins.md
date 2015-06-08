@@ -71,6 +71,7 @@ maintainers.
 * [jruby-mode](https://github.com/toy/rbenv-jruby-mode) - run jruby in different mode (1.8, 2.0) by adding suffix to version
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
+* [mygemfile](https://github.com/xing/rbenv-mygemfile) - use `Mygemfile` as bundler gemfile if it exists
 * [only](https://github.com/Rodreegez/rbenv-only) - execute the same command for
   specified rubies
 * [path](https://github.com/taqtiqa/rbenv-path) - manage contents of `$PATH`
