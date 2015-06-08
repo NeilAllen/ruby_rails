@@ -63,6 +63,7 @@ maintainers.
 * [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
 * [ccache](https://github.com/yyuu/rbenv-ccache) - Make Ruby build faster, with using the leverage of `ccache`.
 * [chefdk](https://github.com/docwhat/rbenv-chefdk) - Use [ChefDK](https://downloads.chef.io/chef-dk/) as if it where just another rbenv version.
+* [clean](https://github.com/sableloki/rbenv-clean) - `gem clean` for rbenv
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [gem-update](https://github.com/nicknovitski/rbenv-gem-update) - automatically run `gem update --system` on `rbenv install`
 * [gemdir](https://github.com/bachue/rbenv-gemdir) - Return the gem directory of the currently selected ruby
@@ -81,7 +82,6 @@ maintainers.
 * [pluger](https://github.com/cao7113/rbenv-pluger) - rbenv plugin manager and booter
 * [rails](https://github.com/alfa-jpn/rbenv-rails) - create rails project with the version.
 * [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
-* [rbenv-clean](https://github.com/sableloki/rbenv-clean) - `gem clean` for rbenv
 * [rvm-download](https://github.com/garnieretienne/rvm-download) - Download ruby binaries from RVM repository
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
