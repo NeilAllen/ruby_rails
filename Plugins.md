@@ -69,6 +69,7 @@ maintainers.
 * [gemdir](https://github.com/bachue/rbenv-gemdir) - Return the gem directory of the currently selected ruby
 * [git](https://github.com/znz/rbenv-git) - `rbenv git` command to run `git` in directories of rbenv and all installed plugins
 * [install-remote](https://github.com/fgrehm/rbenv-install-remote) - support for installing rubies using a custom definition defined remotely (like a gist)
+* [iterate](https://github.com/phillip-koebbe-fidelity/rbenv-iterate) - Execute a command in multiple, specific rbenv rubies
 * [jruby-mode](https://github.com/toy/rbenv-jruby-mode) - run jruby in different mode (1.8, 2.0) by adding suffix to version
 * [man](https://github.com/mlafeldt/rbenv-man) - easily access man pages for
   current Ruby version
