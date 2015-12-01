@@ -10,9 +10,9 @@ accordingly somewhere in `$RBENV_HOOK_PATH`.
 
 This list is edited by rbenv maintainers.
 
-* [ruby-build](https://github.com/sstephenson/ruby-build) - compile and **install Ruby**
+* [ruby-build](https://github.com/rbenv/ruby-build) - compile and **install Ruby**
 * [ctags](https://github.com/tpope/rbenv-ctags) - automatically **generate ctags** for rbenv Ruby stdlibs
-* [vars](https://github.com/sstephenson/rbenv-vars) - safely sets global and
+* [vars](https://github.com/rbenv/rbenv-vars) - safely sets global and
   per-project **environment variables**
 * [each](https://github.com/chriseppstein/rbenv-each) - execute the same command
   **with each** installed Ruby
@@ -25,9 +25,9 @@ This list is edited by rbenv maintainers.
 
 RubyGems-related plugins:
 
-* [gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash) - **automatically run**
+* [gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) - **automatically run**
   `rbenv rehash` every time you install a new gem
-* [default-gems](https://github.com/sstephenson/rbenv-default-gems) - **automatically
+* [default-gems](https://github.com/rbenv/rbenv-default-gems) - **automatically
   install** specific gems after installing a new Ruby
 * [communal-gems](https://github.com/tpope/rbenv-communal-gems) - **share gems** across multiple Ruby installs
 * [user-gems](https://github.com/mislav/rbenv-user-gems) - **discover gems** installed under `~/.gem` or a custom `$GEM_HOME`
