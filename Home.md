@@ -57,3 +57,13 @@ Typically it's one of the following:
 
 See [[Unix shell initialization]] for more info about how config files get
 loaded.
+
+
+  [install]: https://github.com/sstephenson/rbenv#installation
+  [issues]: https://github.com/sstephenson/rbenv/issues
+  [gist]: https://gist.github.com
+  [versions]: https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build
+    "List of available Ruby versions from ruby-build"
+  [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
+  [ruby-build]: https://github.com/sstephenson/ruby-build#readme
+    "Command-line tool for downloading and compiling various Ruby releases"
