@@ -57,31 +57,3 @@ Typically it's one of the following:
 
 See [[Unix shell initialization]] for more info about how config files get
 loaded.
-
-### `/dev/fd` error under Docker or FreeBSD
-
-    ERROR: rbenv/libexec/rbenv-version-file-read:
-    line 23: /dev/fd/62: No such file or directory
-
-Under Linux, the fix tends to be ensuring that udev is running. Or manually, doing the following: 
-
-    sudo ln -s /proc/self/fd /dev/fd
-
-Under Docker, add this to your `Dockerfile`:
-
-    RUN ln -s /proc/self/fd /dev/fd
-
-Under FreeBSD, doing the following:
-
-    sudo mount -t fdescfs fdescfs /dev/fd
-
-  [install]: https://github.com/sstephenson/rbenv#installation
-  [issues]: https://github.com/sstephenson/rbenv/issues
-  [gist]: https://gist.github.com
-  [versions]: https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build
-    "List of available Ruby versions from ruby-build"
-  [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
-  [ruby-build]: https://github.com/sstephenson/ruby-build#readme
-    "Command-line tool for downloading and compiling various Ruby releases"
-  [rbx]: https://github.com/rmm5t/rbenv-rbx
-    "rbenv plugin to enable Rubinius 2.0 usage"
