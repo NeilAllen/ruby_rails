@@ -40,11 +40,9 @@ such behavior is unpredictable and therefore harmful.
 
 ### rbenv is installed but things just aren't working for me!
 
-Please search [existing issues][issues] and open a new one if you can't find any answers. Here's a script that dumps information about your current environment; you can use [Gist][] to paste it online and share the URL to it in your bug report:
+Please search [existing issues][issues] and open a new one if you had problems using rbenv.
 
-```sh
-curl -s https://gist.githubusercontent.com/mislav/4728286/raw/rbenv-doctor.sh | bash -x 2>&1
-```
+The [rbenv-doctor script](https://github.com/rbenv/rbenv-installer#readme) analyzes your system setup for common problems; you can use [Gist][] to paste the results online and share it in your bug report:
 
 ### Which shell startup file do I put rbenv config in?
 
