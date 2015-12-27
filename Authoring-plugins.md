@@ -88,6 +88,8 @@ of:
 
 * `exec`
 * `rehash`
+* `version-name`
+* `version-origin`
 * `which`
 
 Hooks are looked for in `$RBENV_HOOK_PATH`, which is composed of:
