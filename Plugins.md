@@ -25,7 +25,7 @@ This list is edited by rbenv maintainers.
 
 RubyGems-related plugins:
 
-* [gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) - **automatically run**
+* [gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) - **Deprecated** Automatically run
   `rbenv rehash` every time you install a new gem
 * [default-gems](https://github.com/rbenv/rbenv-default-gems) - **automatically
   install** specific gems after installing a new Ruby
