@@ -32,6 +32,7 @@ RubyGems-related plugins:
 * [communal-gems](https://github.com/tpope/rbenv-communal-gems) - **share gems** across multiple Ruby installs
 * [user-gems](https://github.com/mislav/rbenv-user-gems) - **discover gems** installed under `~/.gem` or a custom `$GEM_HOME`
 * [gemset](https://github.com/jf/rbenv-gemset) - basic **gemset support**
+* [gem-src](https://github.com/amatsuda/gem-src) - **git clone**s each installed rubygem's repository
 
 ## Bundler integration
 
