@@ -64,7 +64,7 @@ maintainers.
 * [bundler-ruby-version](https://github.com/aripollak/rbenv-bundler-ruby-version) - picks a ruby version from Gemfile
 * [ccache](https://github.com/yyuu/rbenv-ccache) - Make Ruby build faster, with using the leverage of `ccache`.
 * [chefdk](https://github.com/docwhat/rbenv-chefdk) - Use [ChefDK](https://downloads.chef.io/chef-dk/) as if it where just another rbenv version.
-* [clean](https://github.com/bernsie/rbenv-clean) - `gem clean` for rbenv
+* [clean](https://github.com/jbernsie/rbenv-clean) - `gem clean` for rbenv
 * [env](https://github.com/ianheggie/rbenv-env) - Adds rbenv env command to show relevant environment variables
 * [gem-update](https://github.com/nicknovitski/rbenv-gem-update) - automatically run `gem update --system` on `rbenv install`
 * [gemdir](https://github.com/bachue/rbenv-gemdir) - Return the gem directory of the currently selected ruby
