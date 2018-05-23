@@ -71,6 +71,6 @@ Results logged to /Users/cricket/.rvm/gems/ruby-2.4.3@afar/extensions/x86_64-dar
 
 I did **2 things** and I'm not sure which one "fixed" it.
 1. update Xcode to 9.2 or greater. Check your version: `/usr/bin/xcodebuild -version`
-2. based on [this help page]() edit this file: `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib/libSystem.B.tbd`  to remove ` /usr/lib/system/libsystem_darwin.dylib,` from line #18
+2. based on [this help page](https://qiita.com/MosamosaPoodle/items/8dc818191d59548b48c7) edit this file: `/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/lib/libSystem.B.tbd`  to remove ` /usr/lib/system/libsystem_darwin.dylib,` from line #18
 
 After that I was able to `bundle install` to completion and boot the rails application
