@@ -86,6 +86,7 @@ maintainers.
 * [readline](https://github.com/tpope/rbenv-readline) - Automatically link rbenv Ruby installs to readline on OS X
 * [rvm-download](https://github.com/garnieretienne/rvm-download) - Download ruby binaries from RVM repository
 * [sentience](https://github.com/tpope/rbenv-sentience) - Make rbenv self-aware - creates a `.ruby-version` file inside the root of the installation directory
+* [set](https://github.com/jbernsie/rbenv-set) - install a version of ruby, and set it as `global` in one command
 * [sudo](https://github.com/dcarley/rbenv-sudo) - run rbenv-provided rubies and
   gems from within a sudo session
 * [update-rubies](https://github.com/toy/rbenv-update-rubies) - install updated ruby versions (`1.9.3-p547` => `1.9.3-p550`, `2.1.0` => `2.1.4`)
