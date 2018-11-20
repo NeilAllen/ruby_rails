@@ -65,18 +65,3 @@ loaded.
   [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
   [ruby-build]: https://github.com/sstephenson/ruby-build#readme
     "Command-line tool for downloading and compiling various Ruby releases"
-
-### gem isn't working! It keeps using the system gem/ruby/rake/irb.
-
-Did you remember to **rehash**?
-
-```
-$ rbenv install -v 2.5.0
-$ rbenv global 2.5.0
-$ rbenv rehash
-$ gem install bundler
-$ rbenv rehash
-```
-
-It would be wise to `rbenv rehash` after any install && global and after any `gem` installation.
-
