@@ -8,7 +8,7 @@ accordingly somewhere in `$RBENV_HOOK_PATH`.
 
 ## Approved plugins
 
-This list is edited by rbenv maintainers.
+These plugins are endorsed by rbenv maintainers.
 
 * [ruby-build](https://github.com/rbenv/ruby-build) - compile and **install Ruby**
 * [ctags](https://github.com/tpope/rbenv-ctags) - automatically **generate ctags** for rbenv Ruby stdlibs
@@ -25,8 +25,6 @@ This list is edited by rbenv maintainers.
 
 RubyGems-related plugins:
 
-* [gem-rehash](https://github.com/rbenv/rbenv-gem-rehash) - **Deprecated.** *Automatically run
-  `rbenv rehash` every time you install a new gem*
 * [default-gems](https://github.com/rbenv/rbenv-default-gems) - **automatically
   install** specific gems after installing a new Ruby
 * [communal-gems](https://github.com/tpope/rbenv-communal-gems) - **share gems** across multiple Ruby installs
@@ -54,10 +52,9 @@ If you want to be able to just type `rake`, you have two options from here:
 1. You can add `./bin` to your `$PATH`. See [[Understanding binstubs]] for more info.
 2. You can install the [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs#readme) plugin and run `rbenv rehash` from your project.
 
-## Other plugins (alpha-order)
+## Community plugins
 
-Please add new plugins here. They might get promoted to the above list by rbenv
-maintainers.
+In alphabetical order:
 
 * [around-install](https://github.com/toy/rbenv-around-install) - run scripts before and after `rbenv install` (externalised ruby-build hooks)
 * [bundle-exec](https://github.com/maljub01/rbenv-bundle-exec) - Runs commands using `bundle exec` when invoked from a bundler-managed directory
