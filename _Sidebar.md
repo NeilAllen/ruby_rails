@@ -1,5 +1,5 @@
 * [[FAQ|Home]]
-* [[Authoring plugins]]
+* [[rbenv plugins|Plugins]]
 * [[How to enable rbenv everywhere|How to edit PATH]]
 * [[Deploying with rbenv]]
 * [[Understanding binstubs]]
