@@ -38,11 +38,31 @@ such behavior is unpredictable and therefore harmful.
 
     If not, see the [`rbenv init` step][init] in installation instructions.
 
+### “You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory”
+
+This error can happen on a fresh installation where no Ruby version was configured yet:
+```
+$ gem install bundler
+ERROR: While executing gem ... (Gem::FilePermissionError)
+You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory.
+```
+It's likely that rbenv is still set to use the "system" Ruby, which is the default:
+```
+$ rbenv versions
+* system
+```
+With the system Ruby, the `gem install` operation will try to write into system directories which usually aren't user-writeable, and the user will get a permissions error.
+
+The way to solve this is to install a Ruby version with rbenv (typically via `rbenv install`) and then **select that Ruby version as a "global" version**:
+```
+rbenv install 3.1.2
+rbenv global 3.1.2
+```
+As long as you move away from "system", you should have no permission restrictions while installing gems because other Ruby versions under rbenv are user-writeable.
+
 ### rbenv is installed but things just aren't working for me!
 
-Please search [existing issues][issues] and open a new one if you had problems using rbenv.
-
-The [rbenv-doctor script](https://github.com/rbenv/rbenv-installer#readme) analyzes your system setup for common problems; you can use [Gist][] to paste the results online and share it in your bug report:
+The [rbenv-doctor script](https://github.com/rbenv/rbenv-installer#readme) analyzes your system setup for common problems. It's likely that you just missed a required installation step or have mis-configured your shell startup files.
 
 ### Which shell startup file do I put rbenv config in?
 
