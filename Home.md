@@ -4,33 +4,15 @@ To install rbenv, please refer to the [Readme][install].
 
 ## Troubleshooting / FAQ
 
-### How is this better than RVM?
-
-See [[Why rbenv?]]
-
-### What is allowed in a `.ruby-version` file?
-
-The string read from a `.ruby-version` file must match the name of an existing
-directory in `~/.rbenv/versions/`. You can see the list of installed Ruby
-versions with `rbenv versions`.
-
-If you're using [ruby-build][], typically this will be one of [its Ruby version
-names][versions].
-
-Other version managers might allow fuzzy version matching on the string read
-from `.ruby-version` file, e.g. they might allow "1.9.3" (without patch suffix)
-to match the latest Ruby 1.9.3 release. **rbenv will not support this**, because
-such behavior is unpredictable and therefore harmful.
-
 ### How to verify that I have set up rbenv correctly?
 
 1.  Check that `rbenv` is in your PATH:
 
     ```sh
-    which rbenv
+    which -a rbenv
     ```
 
-2.  Check that rbenv's shims directory is in PATH:
+2.  Check that rbenv shims directory is in PATH:
 
     ```sh
     echo $PATH | grep --color=auto "$(rbenv root)/shims"
@@ -38,9 +20,17 @@ such behavior is unpredictable and therefore harmful.
 
     If not, see the [`rbenv init` step][init] in installation instructions.
 
+### What is allowed in a `.ruby-version` file?
+
+The string read from a `.ruby-version` file must match the name of an existing
+directory in `~/.rbenv/versions/`. You can see the list of installed Ruby
+versions with `rbenv versions`.
+
+Other version managers might allow fuzzy version matching on the string read from `.ruby-version` file, e.g. they might allow "3.1" to activate the latest Ruby 3.1.x release. **rbenv will not support this** since such behavior is non-deterministic and therefore considered harmful.
+
 ### “You don't have write permissions for the /Library/Ruby/Gems/2.6.0 directory”
 
-This error can happen on a fresh installation where no Ruby version was configured yet:
+This error can happen on a fresh installation where no Ruby version was configured yet as "global":
 ```
 $ gem install bundler
 ERROR: While executing gem ... (Gem::FilePermissionError)
@@ -77,11 +67,5 @@ See [[Unix shell initialization]] for more info about how config files get
 loaded.
 
 
-  [install]: https://github.com/sstephenson/rbenv#installation
-  [issues]: https://github.com/sstephenson/rbenv/issues
-  [gist]: https://gist.github.com
-  [versions]: https://github.com/sstephenson/ruby-build/tree/master/share/ruby-build
-    "List of available Ruby versions from ruby-build"
-  [init]: https://github.com/sstephenson/rbenv#basic-github-checkout
-  [ruby-build]: https://github.com/sstephenson/ruby-build#readme
-    "Command-line tool for downloading and compiling various Ruby releases"
+  [install]: https://github.com/rbenv/rbenv#installation
+  [init]: https://github.com/rbenv/rbenv#basic-git-checkout
