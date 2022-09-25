@@ -1,22 +1,21 @@
 Setting up rbenv on a production server is exactly the same as in development.
 Some considerations for a hypothetical deployment strategy:
 
-* It is suggested that there is a single user for deployment, e.g. "app" user
-* `RBENV_ROOT` is at the default location: `~app/.rbenv`
-* Ruby versions are either installed or symlinked to `~app/.rbenv/versions`
-* rbenv version 0.4 or greater is recommended.
+* It is suggested that there is a single user for deployment, e.g. an "app" user.
+* `RBENV_ROOT` is at the default location: `~app/.rbenv`.
+* Ruby versions are either installed under or symlinked to `~app/.rbenv/versions`.
 
-Users of Chef or Puppet may find these projects useful:
+Chef and Puppet users may find these projects useful:
 
 * [chef-rbenv][], [chef-ruby_build][]
 * [puppet-rbenv][]
 
 ## Ensure consistent PATH for processes
 
-Interactive, non-interactive shells, cron jobs, and similar processes for the
-"app" user all must ensure that rbenv is present in the PATH:
+Interactive and non-interactive shells, cron jobs, and similar processes for the
+"app" user all must ensure that [[rbenv shims are prepended to PATH|How to edit path]]:
 
-    export PATH=~/.rbenv/shims:~/.rbenv/bin:"$PATH"
+    export PATH=~/.rbenv/shims:"$PATH"
 
 ## App bundles and binstubs
 
@@ -36,7 +35,15 @@ Now tools that interact with the app should strictly use the executables in
 Such invocation ensures that:
 
 1. The Ruby version for the project is used,
-2. The Unicorn version of the project's bundle is used.
+2. The Unicorn version in the project's bundle is used.
+
+## Containers and rbenv
+
+Applications deployed via a containerized architecture (e.g. Docker) should generally **not use rbenv**.
+
+Originally, rbenv was designed to achieve isolation between projects running on the same host system. Containerized runtimes are a more sophisticated mechanism for isolation and thus do not benefit from rbenv. Instead, just base the container for your Ruby-based app on one of the publicly available [base images for Ruby](https://hub.docker.com/_/ruby).
+
+The bottom line is: if you see rbenv used in a Dockerfile, they blew it.
 
 
   [chef-ruby_build]: https://github.com/fnichol/chef-ruby_build#readme
