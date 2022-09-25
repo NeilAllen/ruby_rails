@@ -2,5 +2,6 @@
 * [[rbenv plugins|Plugins]]
 * [[How to enable rbenv everywhere|How to edit PATH]]
 * [[Deploying with rbenv]]
+* [[Comparison of version managers]]
 * [[Understanding binstubs]]
 * [[Unix shell initialization]]
