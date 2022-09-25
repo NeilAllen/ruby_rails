@@ -4,7 +4,7 @@ The key strengths of rbenv are:
 
 - **Transparent:** rbenv gets out of your way while you work. Install some Ruby versions, select the one you need, and you don't need to interact with rbenv anymore. Other tools that invoke Ruby on the same system don't even need to know that rbenv exists, [[as long as it's in PATH|How to edit PATH]].
 
-- **Extensible:** rbenv does only the bare minimum and the rest it leaves up to its [plugin ecosystem](https://github.com/rbenv/rbenv/wiki/Plugins).
+- **Extensible:** rbenv does only the bare minimum and the rest it leaves up to its [[plugin ecosystem|Plugins]].
 
 - **Portable:** rbenv works in any shell on every Unix-like system. Its only dependency is the bash interpreter, which comes standard with basically every system.
 
