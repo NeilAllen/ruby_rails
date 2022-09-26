@@ -12,7 +12,7 @@ But, its mechanism also has some downsides:
 
 - **Strict:** due to rbenv's strict version isolation between projects, [some users found it challenging](https://github.com/rbenv/rbenv/issues/187) to keep some “global” (system-level) Ruby tooling and invoke it from within their projects. Similarly, other users had discovered that they [can't trivially “shell out”](https://github.com/rbenv/rbenv/issues/121) from a project that uses one Ruby version to a script that uses another Ruby version.
 
-- **Known limitation:** rbenv [cannot discover executables](https://github.com/rbenv/rbenv/issues/1232) from `--user-install`ed gems (those installed under the `~/.gem/ruby/*` path) nor [respect the GEM_HOME](https://github.com/rbenv/rbenv/issues/1382) environment variable.
+- **Known limitation:** rbenv [cannot discover executables](https://github.com/rbenv/rbenv/pull/1436) of `--user-install`ed gems in some contexts, most notably when the currently active Ruby version is "system".
 
 What follows is a short overview of some other Ruby version managers.
 
@@ -20,7 +20,7 @@ What follows is a short overview of some other Ruby version managers.
 
 [chruby][] is a minimal Ruby version manager that hooks into your shell.
 
-It has no overhead on `ruby` execution time because it does the switching either on-demand or, optionally, whenever you `cd` into a project directory. Additionally, it supports gems added using `--user-install` and the GEM_HOME environment variable.
+It has no overhead on `ruby` execution time because it does the switching either on-demand or, optionally, whenever you `cd` into a project directory. Additionally, it offers robust support for running executables of `--user-install`ed gems.
 
 Its downsides are that it is only available in bash and zsh shells, and that other tools that invoke Ruby need to either load a login shell to gain access to version-switching, or need to explicitly invoke `chruby-exec`.
 
