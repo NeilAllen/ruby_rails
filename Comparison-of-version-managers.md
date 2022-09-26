@@ -36,7 +36,7 @@ The downside is that the usage guide linked above requires some manual setup and
 
 [asdf][] works like rbenv, but is able to manage not just Ruby versions, but also Node.js, Python, and many more via its plugin architecture. It's suitable for machines when you need to switch between many versions of different languages, but don't want to use a separate version manager for each language.
 
-It's downside is that it's likely [slower than rbenv](http://stratus3d.com/blog/2022/08/11/asdf-performance/).
+It's downside is that it's likely [slower than rbenv](http://stratus3d.com/blog/2022/08/11/asdf-performance/). Although, asdf can be [combined with direnv](https://github.com/asdf-community/asdf-direnv#readme) to work around that.
 
 ## frum
 
@@ -47,6 +47,12 @@ The downside is that it doesn't support all rbenv features; for example, there s
 ## RVM
 
 RVM is the original version manager that rbenv was created to be an alternative to. RVM might seem user-friendly at first, but it's hard to grok how it works and, historically, it has left users in a state where they don't understand why their Ruby program breaks in a certain way, or how to fix it. Other than for the ease of installing Ruby versions in certain situations, I am not sure what the benefits of RVM are and I can't recommend its use.
+
+## Containerized architecture
+
+A Ruby version manager is only necessary when there will be multiple Ruby versions to switch between while running on the same host machine. With containerized apps, each app can bundle its own runtime dependencies and thus achieve complete isolation from other apps that are technically running on the same hardware. Furthermore, by basing one's containers on publicly available images that already bundle a specific version of Ruby, developers typically shouldn't need to either invoke a Ruby version manager or compile Ruby when building a container for their app.
+
+The downside is that containerized architecture comes at a cost of having to learn all the different tooling to create, maintain, and deploy apps created this way.
 
 
   [chruby]: https://github.com/postmodern/chruby
