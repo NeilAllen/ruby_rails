@@ -24,6 +24,14 @@ It has no overhead on `ruby` execution time because it does the switching either
 
 Its downsides are that it is only available in bash and zsh shells, and that other tools that invoke Ruby need to either load a login shell to gain access to version-switching, or need to explicitly invoke `chruby-exec`.
 
+## direnv
+
+[direnv][] is a general-purpose tool for loading & unloading project-specific environment variables when you change directories in your shell. Even though it's not specifically designed to be a version manager, it can be easily used to modify the PATH environment variable (among others) in a way that [activates a specific Ruby version](https://direnv.net/docs/ruby.html) for each project.
+
+This approach has basically the speed of chruby (there is no ruby execution overhead) and the functionality of [rbenv-vars][].
+
+The downside is that the usage guide linked above requires some manual setup and does not support `.ruby-version` files out of the box.
+
 ## asdf
 
 [asdf][] works like rbenv, but is able to manage not just Ruby versions, but also Node.js, Python, and many more via its plugin architecture. It's suitable for machines when you need to switch between many versions of different languages, but don't want to use a separate version manager for each language.
@@ -42,5 +50,7 @@ RVM is the original version manager that rbenv was created to be an alternative 
 
 
   [chruby]: https://github.com/postmodern/chruby
+  [direnv]: https://direnv.net/
+  [rbenv-vars]: https://github.com/rbenv/rbenv-vars
   [asdf]: https://github.com/asdf-vm/asdf
   [frum]: https://github.com/TaKO8Ki/frum
