@@ -12,9 +12,9 @@ But, its mechanism also has some downsides:
 
 - **Strict:** due to rbenv's strict version isolation between projects, [some users found it challenging](https://github.com/rbenv/rbenv/issues/187) to keep some “global” (system-level) Ruby tooling and invoke it from within their projects. Similarly, other users had discovered that they [can't trivially “shell out”](https://github.com/rbenv/rbenv/issues/121) from a project that uses one Ruby version to a script that uses another Ruby version.
 
-- **Known limitation:** rbenv [cannot discover executables](https://github.com/rbenv/rbenv/pull/1436) of `--user-install`ed gems in some contexts, most notably when the currently active Ruby version is "system".
+- **Unaware of gems installed to user's home directory:** rbenv [cannot discover executables](https://github.com/rbenv/rbenv/pull/1443) of gems installed with the `--user-install` flag, i.e. those installed under `~/.gem` nor `~/.local/share/gem` directories. The solution is to either avoid depending on those gems in rbenv-managed projects, or to manually add the appropriate `~/.local/share/gem/<engine>/<version>/bin` directory to one's PATH.
 
-What follows is a short overview of some other Ruby version managers.
+What follows is a short overview of other Ruby version managers that solve some of these problems.
 
 ## chruby
 
