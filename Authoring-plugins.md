@@ -86,11 +86,19 @@ detects if a command is capable of providing completion values.
 Hooks are bash scripts named like `HOOK_NAME/*.bash`, where "HOOK_NAME" is one
 of:
 
-* `exec`
-* `rehash`
-* `version-name`
-* `version-origin`
-* `which`
+* `exec`: do something just before dispatching a ruby command.
+  - Set environment variables for the ruby process
+  - Modify positional parameters that will be forwarded to the ruby process
+* `rehash`: affect the shims generation.
+  - Call `register_shim <name>` to add a shim name to the list
+  - Call `make_shims <paths>...` to register multiple shims
+* `version-name`: override the ruby version name.
+  - Set `RBENV_VERSION` to override the version
+* `version-origin`: override the version origin label.
+  - Set `RBENV_VERSION_ORIGIN` to the new label
+  - The version origin will be displayed by `rbenv version` and in error messages
+* `which`: affect the command resolution.
+  - Change `RBENV_COMMAND_PATH` to modify the executable that will be dispatched to
 
 Hooks are looked for in `$RBENV_HOOK_PATH`, which is composed of:
 
