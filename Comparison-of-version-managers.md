@@ -38,6 +38,10 @@ The downside is that the usage guide linked above requires some manual setup and
 
 It's downside is that it's likely [slower than rbenv](http://stratus3d.com/blog/2022/08/11/asdf-performance/). Although, asdf can be [combined with direnv](https://github.com/asdf-community/asdf-direnv#readme) to work around that.
 
+## rtx
+
+[rtx] is a newer, fast multi-language version manager that works as a drop-in replacement for <i>asdf</i>.
+
 ## frum
 
 [frum][] is a pure Rust implementation that is an order of magnitude faster than rbenv.
@@ -59,4 +63,5 @@ The downside is that containerized architecture comes at a cost of having to lea
   [direnv]: https://direnv.net/
   [rbenv-vars]: https://github.com/rbenv/rbenv-vars
   [asdf]: https://github.com/asdf-vm/asdf
+  [rtx]: https://github.com/jdxcode/rtx#readme
   [frum]: https://github.com/TaKO8Ki/frum
